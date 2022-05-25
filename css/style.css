@@ -1,0 +1,75 @@
+:root {
+  --page-1-color: rgb(240, 151, 28);
+  --page-2-color: rgb(158, 11, 65);
+  --page-3-color: rgb(204, 62, 24);
+  --page-4-color: rgb(74, 7, 60);
+  --animate-speed: 1s;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+  color: rgb(255, 255, 255);
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#page-1 {
+  background: var(--page-1-color)
+}
+
+#page-2 {
+  background: var(--page-2-color)
+}
+
+#page-3 {
+  background: var(--page-3-color)
+}
+
+#page-4 {
+  background: var(--page-4-color)
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 4rem;
+}
+
+.page h1 {
+  font-size: 4rem;
+  line-height: 1.2;
+  margin: 1rem;
+}
+
+.page p {
+  font-size: 1.3rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: rgb(255, 255, 255);
+  color: rgb(51, 51, 51);
+  text-decoration: none;
+  border: none;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  transition: all 0.3s ease-in;
+}
+
+.btn:hover,
+.btn-dark {
+  background: rgb(51, 51, 51);
+  color: rgb(255, 255, 255);
+}
+
+.btn-dark:hover {
+  background: rgb(255, 255, 255);
+  color: rgb(51, 51, 51);
+}
