@@ -3,7 +3,7 @@
   --page-2-color: rgb(158, 11, 65);
   --page-3-color: rgb(204, 62, 24);
   --page-4-color: rgb(74, 7, 60);
-  --animate-speed: 1s;
+  --animate-speed: 1.5s;
 }
 
 body {
@@ -72,4 +72,26 @@ body {
 .btn-dark:hover {
   background: rgb(255, 255, 255);
   color: rgb(51, 51, 51);
+}
+
+#page-1 h1 {
+  transform: translateY(-1200px);
+  animation: heading var(--animate-speed) forwards ease-in;
+}
+
+#page-1 p {
+  transform: translateX(-1800px);
+  animation: heading var(--animate-speed) forwards ease-in 1s;
+}
+
+@keyframes heading {
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes heading {
+  to {
+    transform: translateX(0);
+  }
 }
